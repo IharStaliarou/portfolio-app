@@ -1,0 +1,36 @@
+.social {
+    position: fixed;
+    top: 406px;
+    left: 62px;
+    width: 338px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(-50%) rotate(-90deg);
+    &-text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $white-color;
+    }
+    &-divider {
+        display: block;
+        width: 70px;
+        height: 2px;
+        background-color: $white-color;
+    }
+    &__items {
+        width: 90px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-decoration: none;
+        color: $white-color;
+        span {
+            font-size: 20px;
+        }
+    }
+}
