@@ -29,12 +29,15 @@
     &__item {
         text-decoration: none;
         color: $black-color;
-        span {
-            font-size: 20px;
+        img {
+            display: block;
+            width: 20px;
+            height: 20px;
+            transform: rotate(90deg);
         }
         &:hover {
             color: $black-color;
-            text-decoration: none;
+            text-decoration: $black-color;
         }
     }
 }
