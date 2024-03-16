@@ -1,7 +1,17 @@
+.titles__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     font-size: 36px;
     font-weight: bold;
     line-height: 60px;
+    &_fz12 {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: normal;
+    }
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
@@ -10,7 +20,18 @@
         font-size: 16px;
         line-height: 24px;
     }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 20px;
+    }
     &_fz48 {
         font-size: 48px;
+    }
+    &_promo {
+        width: 535px;
+        margin-top: 10px;
+    }
+    &_mb0 {
+        margin-bottom: 0px;
     }
 }

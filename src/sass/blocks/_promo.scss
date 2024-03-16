@@ -1,36 +1,22 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background-color: $black-color;
+    background: $main-color;
     padding-top: 205px;
     color: $white-color;
-    &__title {
-        width: 535px;
-        margin-top: 10px;
-    }
     &_btns {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-top: 25px;
     }
-    &__links {
+    &__link {
         color: $white-color;
         font-size: 14px;
-        font-weight: 700;
+        font-weight: bold;
         line-height: 21px;
         &:hover {
             text-decoration: none;
         }
-    }
-    .btn {
-        display: block;
-        width: 135px;
-        height: 45px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        background: rgb(255, 165, 1);
-        text-align: center;
-        line-height: 45px;
-        margin-right: 44px;
     }
 }

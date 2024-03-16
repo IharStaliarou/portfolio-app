@@ -1,0 +1,57 @@
+.about {
+    min-height: 720px;
+    padding-top: 120px;
+    background-color: #fefefe;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 1040px;
+        margin-right: 100px;
+    }
+    &__img {
+       width: 400px;
+       height: 600px;
+       background-color: $main-color;
+    }
+    &__info {
+        width: 570px;
+        &-descr {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+    &__skill-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;        
+        margin-top: 40px;
+        :nth-child(1) {
+            margin-top: 0px;
+        }
+        :nth-child(2) {
+            margin-top: 0px;
+
+        }
+    }
+    &__skill-item {
+        width: 260px;
+        min-height: 116px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        &-img {
+            width: 40px;
+            height: 40px;
+        }
+        &-text {
+            width: 200px;
+        }
+        &-descr {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+    }
+}

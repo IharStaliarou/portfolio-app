@@ -8,17 +8,17 @@
     justify-content: space-between;
     align-items: center;
     transform: translate(-50%) rotate(-90deg);
+    color: $black-color;
     &-text {
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 24px;
-        color: $white-color;
     }
     &-divider {
         display: block;
         width: 70px;
         height: 2px;
-        background-color: $white-color;
+        background-color: $black-color;
     }
     &__items {
         width: 90px;
@@ -28,9 +28,13 @@
     }
     &__item {
         text-decoration: none;
-        color: $white-color;
+        color: $black-color;
         span {
             font-size: 20px;
+        }
+        &:hover {
+            color: $black-color;
+            text-decoration: none;
         }
     }
 }

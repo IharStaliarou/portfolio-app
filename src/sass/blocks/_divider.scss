@@ -1,0 +1,15 @@
+.divider {
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin-bottom: 21px;
+    background-color: $main-color;
+    &_benefit {
+        margin-top: 23px;
+        margin-bottom: 50px;
+    }
+    &_skills {
+        margin-top: 23px;
+        margin-bottom: 61px;
+    }
+}
