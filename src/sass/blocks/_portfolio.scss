@@ -1,0 +1,14 @@
+.portfolio {
+    min-height: 840px;
+    padding-top: 120px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__galleria {
+        width: 100%;
+        min-height: 565px;
+        background-color: $main-color;
+    }
+}

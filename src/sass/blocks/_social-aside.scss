@@ -23,8 +23,23 @@
     &__items {
         width: 90px;
         height: 20px;
+        margin: 20px 0px;
         display: flex;
         justify-content: space-between;
+        &_social {
+            width: 140px;
+            height: 30px;
+            :nth-child(2) {
+                transform: rotate(-90deg);
+            }
+        }
+        &_menu {
+            position: absolute;
+            margin: 0 auto;
+            bottom: 50px;
+            right: 50%;
+            transform: translateX(50%);
+        }
     }
     &__item {
         text-decoration: none;
@@ -33,7 +48,13 @@
             display: block;
             width: 20px;
             height: 20px;
-            transform: rotate(90deg);
+            transform: rotate(90deg);  
+        }
+        &_social {
+            img {
+                width: 30px;
+                height: 30px;
+            }
         }
         &:hover {
             color: $black-color;

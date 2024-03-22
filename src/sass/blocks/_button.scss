@@ -7,4 +7,11 @@
     text-align: center;
     line-height: 45px;
     margin-right: 44px;
+    &_submit {
+        width: 219px;
+        line-height: 45px;
+        border: none;
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
