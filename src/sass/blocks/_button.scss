@@ -13,5 +13,8 @@
         border: none;
         font-size: 14px;
         line-height: 21px;
+        &:hover {
+            color: $white-color;
+        }
     }
 }

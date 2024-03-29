@@ -1,14 +1,14 @@
-.social {
+.sidepanel {
     position: fixed;
-    top: 406px;
+    top: 50%;
     left: 62px;
     width: 338px;
+    height: 25px;
     z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transform: translate(-50%) rotate(-90deg);
-    color: $black-color;
+    transform: translateX(-50%) rotate(-90deg);
     &-text {
         font-size: 16px;
         font-weight: 400;
@@ -20,6 +20,8 @@
         height: 2px;
         background-color: $black-color;
     }
+}
+.social {
     &__items {
         width: 90px;
         height: 20px;
@@ -29,9 +31,6 @@
         &_social {
             width: 140px;
             height: 30px;
-            :nth-child(2) {
-                transform: rotate(-90deg);
-            }
         }
         &_menu {
             position: absolute;
@@ -39,26 +38,20 @@
             bottom: 50px;
             right: 50%;
             transform: translateX(50%);
+            z-index: 5;
         }
     }
     &__item {
-        text-decoration: none;
-        color: $black-color;
         img {
             display: block;
             width: 20px;
             height: 20px;
-            transform: rotate(90deg);  
         }
         &_social {
             img {
                 width: 30px;
                 height: 30px;
             }
-        }
-        &:hover {
-            color: $black-color;
-            text-decoration: $black-color;
         }
     }
 }

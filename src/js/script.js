@@ -18,9 +18,8 @@ window.addEventListener("DOMContentLoaded", () => {
   
     menuLink.forEach((item) => {
       item.addEventListener("click", () => {
-        hamburger.classList.toggle("hamburger_active");
-        menu.classList.toggle("menu_active");
-        cross.classList.toggle("cross_active");
+        hamburger.classList.remove("hamburger_active");
+        menu.classList.remove("menu_active");
       });
     });
   });

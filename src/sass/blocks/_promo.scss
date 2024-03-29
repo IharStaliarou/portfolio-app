@@ -3,7 +3,13 @@
     position: relative;
     background: $main-color;
     padding-top: 205px;
-    color: $white-color;
+    color: $black-color;
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
     &_btns {
         display: flex;
         justify-content: flex-start;
@@ -11,12 +17,18 @@
         margin-top: 25px;
     }
     &__link {
-        color: $white-color;
+        color: $black-color;
         font-size: 14px;
         font-weight: bold;
         line-height: 21px;
         &:hover {
             text-decoration: none;
+            color: $white-color;
         }
+    }
+}
+@media (max-width: 576px) {
+    .promo {
+
     }
 }
