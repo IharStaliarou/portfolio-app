@@ -38,12 +38,19 @@
     }
 }
 
-@import 'blocks/promo';
-@import 'blocks/about';
-@import 'blocks/benefit';
-@import 'blocks/skills';
-@import 'blocks/portfolio';
-@import 'blocks/contacts';
+@import 'blocks/promo/promo';
+@import 'blocks/about/about';
+@import 'blocks/benefit/benefit';
+@import 'blocks/skills/skills';
+@import 'blocks/portfolio/portfolio';
+@import 'blocks/contacts/contacts';
+
+@import 'blocks/promo/promo-media';
+@import 'blocks/about/about-media';
+@import 'blocks/benefit/benefit-media';
+@import 'blocks/skills/skills-media';
+// @import 'blocks/portfolio/portfolio-media';
+// @import 'blocks/contacts/contacts-media';
 
 @import 'blocks/hamburger';
 @import 'blocks/menu';

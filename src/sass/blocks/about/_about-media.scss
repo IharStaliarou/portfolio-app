@@ -1,0 +1,56 @@
+//grid media 
+@media (max-width: 576px) {
+    .about {
+        padding-top: 40px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__photo {
+            width: 300px;
+            height: 340px;
+            align-self: center;
+            background-color: $main-color;
+        }
+
+        &__info {
+            &-descr {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        &__skills {
+            margin: 0 auto;
+            display: grid;
+            grid-template: minmax(115px, auto) / 260px;
+            grid-auto-columns: 260px;
+            grid-auto-rows: 1fr;
+            gap: 20px;
+
+            &__item {
+                display: grid;
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+
+                &-descr {
+                    margin-top: 6px;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+
+            &-circle {
+                position: relative;
+                @include before_circle;
+                padding: 15px 0 0 15px;
+
+                &:before {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

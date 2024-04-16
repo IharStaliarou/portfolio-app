@@ -7,33 +7,71 @@
     font-size: 36px;
     font-weight: bold;
     line-height: 60px;
+
     &_fz12 {
         font-size: 12px;
         line-height: 18px;
         font-weight: normal;
     }
+
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
         margin: 0;
     }
+
     &_fz16 {
         font-size: 16px;
         line-height: 24px;
     }
+
     &_fz20 {
         font-size: 20px;
         line-height: 20px;
         margin: 0;
     }
+
     &_fz48 {
         font-size: 48px;
+        margin: 0;
     }
+
     &_promo {
         width: 535px;
-        margin-top: 10px;
     }
+
     &_mb0 {
         margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        //all h2 titles
+        font-size: 24px;
+        line-height: 36px;
+
+        //promo header
+        &_general-mobile {
+            width: 300px;
+            font-size: 26px;
+            line-height: 39px;
+        }
+
+        &_section-title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &_item {
+            &-title {
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &-subtitle {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
     }
 }

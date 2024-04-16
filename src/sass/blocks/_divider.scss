@@ -18,3 +18,19 @@
         margin-top: 2px;
     }
 }
+
+@media (max-width: 576px) {
+    .divider {
+        &_about {
+            margin-top: 13px;
+        }
+        &_benefit {
+            margin-top: 13px;
+            margin-bottom: 41px;
+        }
+        &_skills {
+            margin-top: 13px;
+            margin-bottom: 21px;
+        }
+    }
+}

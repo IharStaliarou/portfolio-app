@@ -1,0 +1,39 @@
+//grid media
+@media (max-width: 576px) {
+    .skills {
+        padding-top: 40px;
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(1400px, auto) minmax(512px, auto);
+            row-gap: 40px;
+        }
+
+        &__items {
+            margin: 0 auto;
+            grid-template-columns: 270px;
+            grid-template-rows: repeat(5, 270px);
+            grid-auto-rows: 270px;
+            gap: 20px;
+        }
+
+        .progress {
+            margin: 0 auto;
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(5, 70px);
+            row-gap: 40px;
+
+            &__item {
+
+                &-header {
+                    padding-left: 13px;
+                }
+            }
+        }
+    }
+}

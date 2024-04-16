@@ -4,7 +4,7 @@
     background: $main-color;
     padding-top: 205px;
     color: $black-color;
-    &__subtitle {
+    &__title {
         position: relative;
         padding-left: 10px;
         z-index: 2;
@@ -25,10 +25,5 @@
             text-decoration: none;
             color: $white-color;
         }
-    }
-}
-@media (max-width: 576px) {
-    .promo {
-
     }
 }
