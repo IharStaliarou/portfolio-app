@@ -1,7 +1,26 @@
 //grid media
+@media (max-width: 1200px) {
+    .benefit {
+        &__wrapper {
+            padding: 0 15px;
+            column-gap: 80px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .benefit {
+        &__wrapper {
+            padding: 0 10px;
+            grid-template-columns: repeat(2, 320px);
+            column-gap: 60px;
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .benefit {
-        padding-top: 40px;
+        padding-top: 47px;
 
         &__wrapper {
             padding: 0;

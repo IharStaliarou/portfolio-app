@@ -1,5 +1,10 @@
 @media (max-width: 576px) {
     .promo {
+        &__title {
+            &:before {
+                top: -1px;
+            }
+        }
         &_btns {
             margin-top: 32px;
         }

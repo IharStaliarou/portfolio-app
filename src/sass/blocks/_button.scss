@@ -19,3 +19,12 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .btn {
+        &_submit {
+            order: 2;
+            margin: 0 auto;
+        }
+    }
+}
