@@ -1,12 +1,19 @@
+@media (max-width: 1200px) {
+    .portfolio {
+        &__galleria {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            gap: 35px;
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .portfolio {
         padding-top: 40px;
-        min-height: 747px;
-
         &__title {
             margin-bottom: 26px;
         }
-
-        &__galleria {}
     }
 }

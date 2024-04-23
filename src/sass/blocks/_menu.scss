@@ -74,3 +74,11 @@
         opacity: 0.75;
     }
 }
+
+@media (max-width: 576px) {
+    .menu {
+        &__block {
+            width: 320px;
+        }
+    }
+}
