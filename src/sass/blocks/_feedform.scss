@@ -1,51 +1,4 @@
-//flex desktop
-// .feed__form {
-//     height: 340px;
-//     width: 100%;
-//     margin-top: 30px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: start;
-//     justify-content: space-between;
-//     &-data {
-//         width: 100%;
-//         display: flex;
-//         justify-content: space-between;
-//     }
-//     &-item {
-//         width: 280px;
-//         height: 45px;
-//         display: flex;
-//         flex-flow: column nowrap;
-//         border: 1px solid rgb(0, 0, 0);
-//         position: relative;
-//         label {
-//             position: absolute;
-//             left: 10px;
-//             top: -12px;
-//             background-color: #fff;
-//             padding: 0px 10px;
-//             margin: 0px;
-//         }
-//         input {
-//             box-sizing: border-box;
-//             height: 100%;
-//             padding: 14px 20px;
-//             border: none; 
-//         }
-//     }
-//     &-message {
-//         height: 190px;
-//         width: 585px;
-//         textarea {
-//             resizer: none;
-//             border: none;
-//             padding: 14px 20px;
-//         }
-//     }
-// }
-
-//grid desktop
+// grid desktop
 .feed__form {
     margin-top: 30px;
     display: grid;
@@ -88,6 +41,7 @@
     }
 }
 
+// grid media
 @media (max-width: 1200px) {
     .feed__form {
         grid-template-columns: repeat(2, 250px);

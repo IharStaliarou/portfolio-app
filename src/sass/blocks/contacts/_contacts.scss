@@ -1,34 +1,4 @@
-//flex dessktop
-// .contacts {
-//     height: 810px;
-//     padding-top: 120px;
-//     &__wrapper {
-//         height: 600px;
-//         width: 1050px;
-//         margin: 0 auto;
-//         display: flex;
-//         justify-content: space-between;
-//     }
-//     &__title {
-//         position: relative;
-//         padding: 1px 0 0 12px;
-//         @include before_circle;
-//     }
-//     &__img {
-//         height: 600px;
-//         width: 400px;
-//         background-color: $main-color;
-//     }
-//     &__block {
-//         width: 585px;
-//         margin-top: 10px;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: flex-start;
-//     }
-// }
-
-//grid desktop
+// grid desktop
 .contacts {
     padding-top: 120px;
     margin-bottom: 100px;
