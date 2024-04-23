@@ -4,23 +4,31 @@
     background: $main-color;
     padding-top: 205px;
     color: $black-color;
+
     &__title {
         position: relative;
         padding-left: 10px;
         z-index: 2;
         @include before_circle;
     }
+
+    &__header {
+        width: 535px;
+    }
+
     &_btns {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-top: 25px;
     }
+
     &__link {
         color: $black-color;
         font-size: 14px;
         font-weight: bold;
         line-height: 21px;
+
         &:hover {
             text-decoration: none;
             color: $white-color;

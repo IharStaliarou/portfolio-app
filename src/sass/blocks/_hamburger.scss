@@ -10,9 +10,11 @@
     align-items: flex-end;
     z-index: 6;
     transition: 1.0s all;
+
     &:hover {
         cursor: pointer;
     }
+
     span {
         display: block;
         width: 100%;
@@ -20,23 +22,28 @@
         background-color: #000;
         transition: 1.0s all;
     }
+
     :nth-child(2) {
         width: 120%;
     }
+
     &_active {
         transition: 1.0s all;
         z-index: 6;
+
         :nth-child(1) {
             transform: translateY(13px) rotate(-225deg);
         }
+
         :nth-child(2) {
             width: 0px;
         }
+
         :nth-child(3) {
             transform: translateY(-13px) rotate(-315deg);
         }
     }
-}     
+}
 
 @media (max-width: 576px) {
     .hamburger {

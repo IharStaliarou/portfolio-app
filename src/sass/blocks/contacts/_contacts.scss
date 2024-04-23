@@ -48,6 +48,12 @@
         @include before_circle;
     }
 
+    &__text {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 700;
+    }
+
     &__img {
         background-color: $main-color;
         grid-row: 1/3;
@@ -64,17 +70,20 @@
     &__form {
         padding-top: 5px;
     }
+
     &__active {
         grid-column: 1/3;
         display: grid;
         grid-template-columns: repeat(2, auto);
         column-gap: 35px;
     }
+
     &__policy {
         display: flex;
         align-items: center;
         font-size: 12px;
         line-height: 14px;
+
         input {
             margin-right: 10px;
         }

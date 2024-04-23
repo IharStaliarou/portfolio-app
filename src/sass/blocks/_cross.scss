@@ -5,15 +5,19 @@
     height: 40px;
     width: 0px;
     transition: 1.6s all;
+
     :nth-child(1) {
         transform: translateY(15px) tra rotate(-225deg);
     }
+
     :nth-child(2) {
         transform: translateY(15px) rotate(134deg);
     }
+
     &:hover {
         cursor: pointer;
     }
+
     span {
         display: block;
         width: 100%;
@@ -22,14 +26,18 @@
         margin-bottom: -4px;
 
     }
+
     &_active {
         width: 40px;
+
         :nth-child(1) {
             transform: translateY(15px) rotate(-45deg);
         }
+
         :nth-child(2) {
             transform: translateY(15px) rotate(45deg);
         }
+
         span {
             transition: 1.6s all;
         }

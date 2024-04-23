@@ -5,6 +5,7 @@
             grid-template-columns: 400px 520px;
             column-gap: 40px;
         }
+
         &__skills {
             grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
             column-gap: 20px;
@@ -17,10 +18,34 @@
         &__wrapper {
             grid-template-columns: 300px 380px;
         }
+
         &__skills {
             grid-template-columns: 1fr;
+
             &__item {
                 grid-template-columns: 40px 320px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding-top: 40px;
+
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+        }
+
+        &__photo {
+            grid-row: unset;
+        }
+
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+
+            &__item {
+                grid-template-columns: 40px 200px;
             }
         }
     }
@@ -39,7 +64,11 @@
         }
 
         &__skills {
-            // grid-template-columns: 1fr;
+            grid-template-columns: 1fr;
+
+            &__item {
+                grid-template-columns: 40px auto;
+            }
         }
     }
 }

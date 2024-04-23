@@ -1,66 +1,73 @@
-.titles__wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .title {
     font-size: 36px;
     font-weight: bold;
     line-height: 60px;
 
-    &_fz12 {
-        font-size: 12px;
-        line-height: 18px;
-        font-weight: normal;
-    }
-
-    &_fz14 {
-        font-size: 14px;
-        line-height: 21px;
+    &_main {
+        font-size: 48px;
         margin: 0;
     }
 
-    &_fz16 {
+    &_section {
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 0;
     }
 
-    &_fz20 {
+    &_group {
         font-size: 20px;
         line-height: 20px;
         margin: 0;
     }
 
-    &_fz48 {
-        font-size: 48px;
-        margin: 0;
+    &_item {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0;
     }
+}
 
-    &_promo {
-        width: 535px;
+.subtitle {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 0;
+
+    &_item {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: normal;
     }
+}
 
-    &_mb0 {
-        margin-bottom: 0px;
+@media (max-width: 992px) {
+    .subtitle {
+        font-size: 30px;
+        line-height: 42px;
+
+        &_item {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+
+        &_main {
+            font-size: 28px;
+            line-height: 39px;
+        }
     }
 }
 
 @media (max-width: 576px) {
     .title {
-        //all h2 titles
-        font-size: 24px;
-        line-height: 36px;
 
-        //promo header
-        &_general-mobile {
-            width: 300px;
+        &_main {
             font-size: 26px;
             line-height: 39px;
-        }
-
-        &_section-title {
-            font-size: 16px;
-            line-height: 24px;
         }
 
         &_item {
@@ -68,10 +75,16 @@
                 font-size: 14px;
                 line-height: 21px;
             }
-            &-subtitle {
-                font-size: 12px;
-                line-height: 18px;
-            }
+        }
+    }
+
+    .subtitle {
+        font-size: 24px;
+        line-height: 36px;
+
+        &_item {
+            font-size: 12px;
+            line-height: 18px;
         }
     }
 }

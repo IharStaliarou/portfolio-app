@@ -2,11 +2,6 @@
 @media (max-width: 1200px) {
     .skills {
 
-        &__wrapper {
-            grid-template-rows: 553px minmax(270px, auto);
-
-        }
-
         &__items {
             grid-template-columns: repeat(auto-fit, 270px);
             justify-content: space-between;
@@ -23,16 +18,34 @@
 
 @media (max-width: 992px) {
     .skills {
-        &__wrapper {
-            grid-template-rows: minmax(836px, auto) minmax(270px, auto);
-        }
+
         &__items {
             padding: 0 20px;
         }
+
         .progress {
             grid-template-columns: repeat(auto-fit, 320px);
             padding: 0;
             column-gap: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding-top: 40px;
+
+        &__subtitle {
+            margin-top: 26px;
+        }
+
+        &__items {
+            justify-content: center;
+            row-gap: 20px;
+        }
+
+        .progress {
+            justify-content: center;
         }
     }
 }
@@ -45,13 +58,6 @@
             text-align: center;
         }
 
-        &__wrapper {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: minmax(1400px, auto) minmax(512px, auto);
-            row-gap: 40px;
-        }
-
         &__items {
             grid-template-columns: repeat(auto-fit, 270px);
             grid-template-rows: minmax(270px, auto);
@@ -61,6 +67,7 @@
         }
 
         .progress {
+            margin-top: 40px;
             grid-template-columns: repeat(auto-fit, 300px);
             grid-template-rows: minmax(70px, auto);
             justify-content: center;
