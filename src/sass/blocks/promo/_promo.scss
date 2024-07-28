@@ -1,9 +1,17 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: $main-color;
+    background: #c9d1c8;
     padding-top: 205px;
     color: $black-color;
+
+    &__photo {
+        position: absolute;
+        height: 150%;
+        right: 30%;
+        bottom: 0;
+        transform: translateX(50%);
+    }
 
     &__title {
         position: relative;

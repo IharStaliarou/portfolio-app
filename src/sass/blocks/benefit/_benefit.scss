@@ -21,7 +21,9 @@
     &__wrapper {
         padding: 0 65px;
         display: grid;
-        grid-template-columns: repeat(2, 425px);
+        // grid-template-columns: repeat(2, 425px);
+        grid-template-columns: repeat(auto-fit, 425px);
+        justify-content: center;
         column-gap: 144px;
     }
 
@@ -88,6 +90,10 @@
                     left: 16px;
                     top: 15px;
                 }
+            }
+
+            a {
+                color: $main-color;
             }
         }
 
