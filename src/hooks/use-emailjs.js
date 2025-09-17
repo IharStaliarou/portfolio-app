@@ -21,10 +21,10 @@ export const useEmailJS = () => {
       };
 
       const response = await emailjs.send(
-        EMAILJS_CONFIG.SERVICE_ID,
-        EMAILJS_CONFIG.TEMPLATE_ID,
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
         templateParams,
-        EMAILJS_CONFIG.PUBLIC_KEY
+        EMAILJS_CONFIG.publicKey
       );
 
       if (response.status === 200) {
@@ -34,6 +34,7 @@ export const useEmailJS = () => {
         throw new Error('Failed to send email');
       }
     } catch (err) {
+      console.error('EmailJS error:', err);
       const errorMessage = err.message || 'Failed to send message';
       setError(errorMessage);
       return false;

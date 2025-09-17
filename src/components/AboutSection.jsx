@@ -1,9 +1,20 @@
+import { useState } from 'react';
 import { AREAS_OF_ACTIVITY } from '../constants';
+import { CVModal } from './CVModal';
 
 export const AboutSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <section id='about' className='relative px-4 py-24'>
-      {' '}
       <div className='container mx-auto max-w-5xl'>
         <h2 className='mb-12 text-center text-3xl font-bold md:text-4xl'>
           About <span className='text-primary'> Me</span>
@@ -30,16 +41,15 @@ export const AboutSection = () => {
 
             <div className='flex flex-col justify-center gap-4 pt-4 sm:flex-row'>
               <a href='#contact' className='cosmic-button'>
-                {' '}
                 Get In Touch
               </a>
 
-              <a
-                href=''
+              <button
+                onClick={handleOpenModal}
                 className='border-primary text-primary hover:bg-primary/10 rounded-full border px-6 py-2 transition-colors duration-300'
               >
                 Download CV
-              </a>
+              </button>
             </div>
           </div>
 
@@ -64,6 +74,8 @@ export const AboutSection = () => {
             })}
           </div>
         </div>
+
+        <CVModal isOpen={isModalOpen} onClose={handleCloseModal} />
       </div>
     </section>
   );
