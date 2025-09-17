@@ -1,27 +1,41 @@
 {
-	"name": "portfolio_starter",
-	"version": "1.0.0",
-	"description": "",
-	"main": "gulpfile.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"browser-sync": "^2.29.3",
-		"gulp": "^4.0.2",
-		"gulp-autoprefixer": "^8.0.0",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-cli": "^2.3.0",
-		"gulp-htmlmin": "^5.0.1",
-		"gulp-rename": "^2.0.0",
-		"gulp-sass": "^5.1.0",
-		"sass": "^1.71.1"
-	},
-	"browserslist": [
-		"last 2 chrome versions",
-		"last 2 firefox versions",
-		"last 2 ios versions"
-	]
+  "name": "portfolio-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,json,css,md}\"",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@radix-ui/react-toast": "^1.2.10",
+    "@tailwindcss/vite": "^4.1.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.501.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.5.1",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "vite": "^5.3.4"
+  }
 }
