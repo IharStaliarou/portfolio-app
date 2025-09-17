@@ -4,33 +4,16 @@ import { useEffect, useState } from 'react';
 import { ThemeToggle } from './ThemeToggle';
 import { NAV_ITEMS } from '../constants';
 
-export const Navbar = () => {
+export const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
   }, []);
 
   return (
@@ -65,41 +48,14 @@ export const Navbar = () => {
           <ThemeToggle />
         </div>
 
-        {/* mobile nav */}
-
+        {/* mobile menu button */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className='text-foreground absolute top-5 right-5 z-50 p-2 md:hidden'
+          className='text-foreground z-50 p-2 md:hidden'
           aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{' '}
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-
-        <div
-          className={cn(
-            'bg-background/95 backdroup-blur-md fixed inset-0 z-40 flex flex-col items-center justify-center',
-            'transition-all duration-300 md:hidden',
-            isMenuOpen
-              ? 'pointer-events-auto opacity-100'
-              : 'pointer-events-none opacity-0'
-          )}
-        >
-          <div className='flex flex-col space-y-8 text-xl'>
-            {NAV_ITEMS.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                className='text-foreground/80 hover:text-primary transition-colors duration-300'
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-          <div className='absolute top-5 left-5'>
-            <ThemeToggle />
-          </div>
-        </div>
       </div>
     </nav>
   );
