@@ -85,7 +85,8 @@ export const SKILLS = [
   // Backend
   { name: 'Node.js', level: 50, category: 'backend' },
   { name: 'Express', level: 50, category: 'backend' },
-  { name: 'NestJS', level: 20, category: 'backend' },
+  { name: 'NestJS', level: 50, category: 'backend' },
+  { name: 'Swagger', level: 50, category: 'backend' },
   { name: 'PostgreSQL', level: 30, category: 'backend' },
   { name: 'Prisma', level: 40, category: 'backend' },
 
@@ -96,4 +97,40 @@ export const SKILLS = [
   { name: 'Jira', level: 90, category: 'tools' },
 ];
 
-export const PROJECTS = [];
+export const PROJECTS = [
+  {
+    id: 1,
+    title: 'Pizza-Next',
+    description: 'A web application for ordering pizza and other products.',
+    image: '/projects/pizza-next.png',
+    tags: [
+      'Next',
+      'TailwindCSS',
+      'ShadCN',
+      'Zustand',
+      'Prisma',
+      'PostgreSQL',
+      'EmailJS',
+    ],
+    demoUrl: 'https://pizza-next-mocha.vercel.app/',
+    githubUrl: 'https://github.com/IharStaliarou/pizza-next',
+  },
+  {
+    id: 2,
+    title: 'UniLib',
+    description: `The university's online library for reserving books. An administrative panel for managing books.`,
+    image: '/projects/unilib-next.png',
+    tags: ['Next', 'TailwindCSS', 'Drizzle', 'PostgreSQL', 'Resend'],
+    demoUrl: 'https://university-library-next.vercel.app/',
+    githubUrl: 'https://github.com/IharStaliarou/university-library-next',
+  },
+  {
+    id: 3,
+    title: 'Employees Management System',
+    description: `A web application for managing employees: adding, editing, and deleting employees.`,
+    image: '/projects/employees.png',
+    tags: ['React', 'MaterialUI'],
+    demoUrl: 'https://iharstaliarou.github.io/employees-table-react-ts/',
+    githubUrl: 'https://github.com/IharStaliarou/employees-table-react-ts',
+  },
+];
